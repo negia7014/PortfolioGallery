@@ -12,7 +12,7 @@ body{
 .leftside{
     width: 10%;
    /* border: 2px solid black;*/
-    flex-basis: 30%;
+    flex-basis: 34%;
     margin: 0px auto ;
 }
 h2{
@@ -112,10 +112,7 @@ p{
         flex-direction: column;
     }
     .leftside{
-        margin-left: 40%;
-    }
-    .text{
-        display: inline-block;
+        width: 90.60%;
     }
     .rightside{
         width: 100%;
