@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right,#041308,#0b3317);
+}
+.main{
+    display: flex;
+}
+.leftside{
+    width: 10%;
+   /* border: 2px solid black;*/
+    flex-basis: 30%;
+    margin: 0px auto ;
+}
+h2{
+    padding-top: 70% ;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+.para{
+    padding: 10%;
+}
+p{
+    text-align: center;
+    color: white;
+}
+.rightside{
+    width: 60%;
+  /*border: 2px solid black;*/
+    margin: 50px auto;
+    display: grid;
+    grid-template-rows: 120px 120px 150px 120px;
+    grid-template-columns: repeat(3,1fr) 110px;
+    grid-gap: 8px;
+    flex-basis: 60%;
+}
+#box1{
+    background-image: url("https://cdn.pixabay.com/photo/2019/12/29/04/06/waterfall-4726196_640.jpg");
+    background-size: cover;
+    display: grid;
+    grid-column: 1/-1;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 1.5rem;
+    color: white;
+}
+#box2{
+    background-image: url("https://cdn.wallpapersafari.com/57/89/USn6ve.jpg");
+    background-size: cover;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 1.2rem;
+    color: white;
+}
+#box3{
+    background-image: url("https://images8.alphacoders.com/543/543152.jpg");
+    background-size: cover;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 1.2rem;
+    color: white;
+}
+#box4{
+    background-image: url("https://t3.ftcdn.net/jpg/05/13/20/16/360_F_513201639_VXKCrHzImRyt7S5Y0X1vXPXOwdL2445w.jpg");
+    background-size: cover;
+    background-position: left;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 1.2rem;
+    color: white;
+}
+#box5{
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/142/935/large_2x/beautiful-tropical-beach-background-free-photo.jpg");
+    background-size: cover;
+    display: grid;
+    grid-row: 2/4;
+    grid-column:4/5;
+    text-align: center;
+    padding-top: 130px;
+    font-size: 1.4rem;
+    color: white;
+}
+#box6{
+    background-image: url("https://www.vandelaydesign.com/wp-content/uploads/mountain-wallpaper-30.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: grid;
+    grid-column: 1/4;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 1.5rem;
+    color: white;
+}
+#box7{
+    background-image: url("https://img.freepik.com/free-photo/fantastic-seascape-with-ripples_1232-424.jpg?w=2000");
+    background-position: bottom;
+    display: grid;
+    grid-column: 1/-1;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 1.5rem;
+    color: white;
+}
+/* media Queries for small screen device less than 1024px*/
+@media screen and (max-width:1024px){
+    .main{
+        flex-direction: column;
+    }
+    .leftside{
+        margin-left: 40%;
+    }
+    .text{
+        display: inline-block;
+    }
+    .rightside{
+        width: 100%;
+        grid-gap: 16px;
+        grid-template-rows: 160px 160px 160px 160px;
+    }
+    #box2{
+        display: grid;
+        grid-column: 1/5;
+    }
+    #box5{
+        grid-row: span 1;
+        grid-column: 1/5;
+    }
+    #box3{
+        grid-column: 1/5;
+    }
+    #box4{
+        grid-column: 1/5;
+    }
+    #box6{
+        grid-column: 1/5;
+        height: 160px;
+    }
+    #box7{
+        height: 160px;
+    }
+}
+
+
